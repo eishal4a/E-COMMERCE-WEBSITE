@@ -1,0 +1,94 @@
+.main img{
+    width: 1525px;
+    height: 700px;
+    opacity: 10%;
+}
+.dd img{
+     width: 1525px;
+    height: 700px;
+    opacity: 10%;
+    margin-top: -172px ;
+}
+.main h1{
+    font-size: 100px;
+    margin-top: -650px;
+    margin-left: 50px;
+}
+.main h5{
+    font-size: 20px;
+    margin-top: -50px;
+    margin-left: 50px;
+}
+.main p{
+     font-size: 18px;
+    margin-top: 0px;
+    margin-left: 50px;
+}
+.main h2{
+     font-size: 35px;
+    margin-top: 0px;
+    margin-left: 50px;
+    
+}
+.main{
+    margin-bottom: 250px;
+}
+.dd{
+    margin-top: 0px;
+    margin-bottom: 200px;
+}
+.ld{
+    height: 500px;
+    width: 1400px;
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+    margin-top: -700px;
+    color: grey;
+    margin-bottom: 200px;
+    margin-left: 50px;
+}
+.ds input{
+    background-color: rgba(255, 0, 0, 0.3);
+    height: 100px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    font-size: 30px;
+    font-weight: 100;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border: 2px solid black;
+    width: 500px;
+}
+.rd input{
+    background-color: rgba(255, 0, 0, 0.3);
+    height: 440px;
+    border-radius: 12px;
+    margin-top: -440px;
+    font-size: 30px;
+    text-align:left;
+    font-weight: 100;
+    position: absolute;
+    z-index: 1;
+    padding-left: 50px;
+    border: 2px solid black;
+    margin-left: 700px;
+    width: 600px;
+}
+.dd button{
+    height: 70px;
+    background-color: red;
+    width: 300px;
+    color: white;
+    font-size: 50px;
+    z-index: 1;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    position: absolute;
+    border: 0px;
+    border-radius: 12px;
+    margin-left: -1470px;
+    cursor: pointer;
+    margin-top: 350px;
+}

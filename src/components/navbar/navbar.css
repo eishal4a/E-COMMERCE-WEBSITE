@@ -1,0 +1,251 @@
+.navbar{
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 20px;
+border-radius: 12px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+background-color: white;
+margin-top: 10px;
+height: 50px;
+  position: relative; 
+  z-index: 10;
+margin-left: 35px;
+width: 1480px;
+}
+.nav-logo{
+    background-color: red;
+    border-radius: 12px;
+    height: 70px;
+    width: 200px;
+    margin-left: -10px;
+    display: flex;
+    margin-top: -20px;
+}
+.nav-logo p{
+    height: 70px;
+    background-color: white;
+    width: 20px;
+    color: white;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+.nav-logo img{
+    height: 140px;
+    width: 140px;
+    margin-top: -35px;
+    padding-left: 20px;
+}
+.nav-menu{
+    list-style: none;
+    font-size: 26px;
+    display: flex;
+    padding-left: 400px;
+    font-weight: 600;
+    margin-left: 250px;
+    text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+.nav-menu li{
+    padding-right: 20px;
+    margin-top: -20px;
+    font-size: 20px;
+  background: transparent;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+  padding: 1em 1.5em;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+.nav-menu li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: transparent;
+  transition: 0.1s ease;
+}
+.nav-menu li:hover {
+  color: #000000;
+  transition-delay: 0.1s;
+}
+
+.nav-menu li::before {
+  width: 100%;
+}
+
+.nav-menu li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #ff0606bd ;
+  transition: 0.1s ease;
+  z-index: -1;
+}
+
+.nav-menu li:hover::after {
+  height: 4%;
+  transition-delay: 0.1s;
+  color: aliceblue;
+}
+
+.shop-button button{
+    height: 50px;
+    width: 160px;
+    margin-top: -20px;
+     background-color: red;
+     border: 0px;
+     justify-content: center;
+     align-items: center;
+     border-radius: 12px;
+     position: relative;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+}
+.shop-button p{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    margin-top: 10px;
+}
+.search{
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    margin-top: -30px;
+}
+.cart{
+    height: 60px;
+    width: 60px;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+
+.shop-button button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffffff;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.shop-button button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.shop-button button p{
+  width: 100%;
+  padding-top: 15px;
+  color: #ffffff;
+  font-weight: 700;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.shop-button button p:hover{
+  color: #ff0000;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.search img{
+  height:40px;
+  margin-top: -10px;
+  width: 40px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #000000;
+  margin-left: -30px;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.1s ease;
+  cursor: pointer;
+  mix-blend-mode: multiply;
+}
+.cart img{
+  height: 40px;
+  margin-top: -15px;
+ background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+   mix-blend-mode: multiply;
+  margin-left: -30px;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.1s ease;
+  cursor: pointer;
+  width: 40px;
+}
+.search img:hover {
+  height:42px;
+  margin-top: -8px;
+  width: 42px;
+  transition-delay: 0.1s;
+}
+.cart img:hover {
+  height:42px;
+  margin-top: -13px;
+  width: 42px;
+  transition-delay: 0.1s;
+}

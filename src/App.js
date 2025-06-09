@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Navbar from './components/navbar/navbar.jsx';
+import Hero from './components/hero/hero.jsx';
+import Hero2 from './components/hero2/hero2.jsx';
+import { Routes, Route } from 'react-router-dom';
+import About from './pages/abouts/abouts.jsx';
+import Products from './pages/products/products.jsx';   
+import ContactUs from './pages/contactus/contactus.jsx'; 
+import Footer from './components/footer/footer.jsx';
+import Cart from './components/cart/cart.jsx';
 
 function App() {
+  const [showHero, setShowHero] = useState(true);
+
+  const toggleHero = () => {
+    setShowHero(!showHero);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      
+      <Routes>
+        <Route path="/home" element={showHero ? <Hero toggleHero={toggleHero} /> : <Hero2 toggleHero={toggleHero} />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+      <Footer/>
     </div>
   );
 }
