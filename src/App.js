@@ -8,7 +8,6 @@ import Products from './pages/products/products.jsx';
 import ContactUs from './pages/contactus/contactus.jsx'; 
 import Footer from './components/footer/footer.jsx';
 import Cart from './components/cart/cart.jsx';
-
 function App() {
   const [showHero, setShowHero] = useState(true);
 
@@ -18,6 +17,7 @@ function App() {
 
   return (
     <div>
+      
       <Navbar />
       
       <Routes>

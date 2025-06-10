@@ -16,11 +16,6 @@ import item1 from '../assets/8.png'
 import item2 from '../assets/9.png'
 import item3 from '../assets/10.png'
 import bg4 from'../assets/bg4.jpg'
-import logo from '../assets/logo.png'
-import icon1 from'../assets/faceook.png'
-import icon2 from '../assets/twitter.png'
-import icon3 from '../assets/email.png'
-import icon4 from '../assets/insta.png'
 
 
 const Hero2 = ({ toggleHero }) => {
@@ -40,7 +35,7 @@ const Hero2 = ({ toggleHero }) => {
         <img src={bg} alt=""/>
       </div>
       <div className='heading'>
-        <h1>Freshly Food<br /> Trading </h1>
+        <h1>Freshly  Fresh Food<br /> Trading  LLC </h1>
       </div>
 
 
@@ -103,7 +98,7 @@ const Hero2 = ({ toggleHero }) => {
         <img src={item1} alt=""/>
         <p>Halal-certified, farm-raised mutton sourced from trusted suppliers in Pakistan. Our bone-in cuts are rich in flavor, ideal for traditional dishes like stews, biryani, and curries. Carefully processed to maintain freshness and nutritional value during export.</p>
          <h3>AED 28.00/kg</h3>
-         <div className='more-info-button' onClick={() => setMenu("Products")}><Link to="/products" className="nav-link">
+         <div className='more-info-button2' onClick={() => setMenu("Products")}><Link to="/products" className="nav-link">
           <button>
             <h6>MORE INFO</h6>
           </button></Link>
@@ -115,7 +110,7 @@ const Hero2 = ({ toggleHero }) => {
         <img src={item2} alt=""/>
         <p>Top-grade, boneless beef selected from grass-fed cattle, offering tender texture and rich taste. Perfect for grilling, roasting, or high-end restaurant preparations. Vacuum-sealed for maximum shelf life and hygiene compliance.</p>
          <h3>AED 34.00/kg</h3>
-         <div className='more-info-button' onClick={() => setMenu("Products")}><Link to="/products" className="nav-link">
+         <div className='more-info-button2' onClick={() => setMenu("Products")}><Link to="/products" className="nav-link">
           <button>
             <h6>MORE INFO</h6>
           </button></Link>
@@ -127,7 +122,7 @@ const Hero2 = ({ toggleHero }) => {
         <img src={item3} alt=""/>
         <p>Fresh, halal-certified chicken cleaned and processed under strict hygienic conditions. Ideal for bulk orders, this product is ready for immediate use in restaurants, catering, or wholesale distribution. Sourced from high-quality poultry farms in India and Pakistan.</p>
          <h3>AED 14.50/kg</h3>
-         <div className='more-info-button' onClick={() => setMenu("Products")}><Link to="/products" className="nav-link">
+         <div className='more-info-button2' onClick={() => setMenu("Products")}><Link to="/products" className="nav-link">
           <button>
             <h6>MORE INFO</h6>
           </button></Link>

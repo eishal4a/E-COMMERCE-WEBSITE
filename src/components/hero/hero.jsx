@@ -32,7 +32,7 @@ const Hero = ({ toggleHero }) => {
         <img src={bg} alt=""/>
       </div>
       <div className='heading'>
-        <h1>Freshly Food<br /> Trading </h1>
+        <h1>Freshly Fresh Food<br /> Trading  LLC </h1>
       </div>
 
 

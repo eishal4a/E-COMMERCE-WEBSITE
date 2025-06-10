@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import bgr from '../../components/assets/bg4.jpg';
 import './products.css';
@@ -12,27 +12,27 @@ const Products = () => {
    const[menu,setMenu]=useState("shop");
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+const meat = useRef(null);
+const fv = useRef(null);
 
-const scrollToSection = async () => {
-  document.getElementById('meat').scrollIntoView({ behavior: 'smooth' });
-  await delay(1000);
+ const scrollToMeat = () => {
+    meat.current.scrollIntoView({ behavior: "smooth" });
+  };
 
-  document.getElementById('f&v').scrollIntoView({ behavior: 'smooth' });
-  await delay(1000);
+  const scrollToFV = () => {
+    fv.current.scrollIntoView({ behavior: "smooth" });
+  };
 
-  document.getElementById('top').scrollIntoView({ behavior: 'smooth' });
-};
-
-
-
-
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
   return (
     <div>
-      <div className='bgr'>
+      <div id='top' className='bgr'>
         <img src={bgr} alt=""/>
         <h2>OUR PRODUCTS</h2>
         <div className='firstbtn' onClick={() => setMenu("Cart")}><Link to="/cart" className="nav-link">
-          <button onClick={scrollDown}>SEE ITEMS ADDED</button></Link>
+          <button onClick={() => setMenu("Cart")}>SEE ITEMS ADDED</button></Link>
         </div>
       </div>
 
@@ -44,14 +44,14 @@ const scrollToSection = async () => {
         <div className='left'>
           <img src={item11} alt=""/>
           <h2>MEAT</h2>
-          <h4 onClick={scrollToSection}>SEE ALL PRODUCTS</h4>
-          <img className='mt' src={mt} alt=""/>
+          <h4 onClick={scrollToMeat}>SEE ALL PRODUCTS</h4>
+          <img onClick={scrollToMeat} className='mt' src={mt} alt=""/>
         </div>
         <div className='right'>
           <img src={itemaa} alt=""/>
           <h2>FRUITS & VEGETABLES</h2>
-          <h4>SEE ALL PRODUCTS</h4>
-          <img className='mt' src={mt} alt=""/>
+          <h4 onClick={scrollToFV}> SEE ALL PRODUCTS</h4>
+          <img onClick={scrollToFV} className='mt' src={mt} alt=""/>
         </div>
       </div>
 
@@ -61,7 +61,7 @@ const scrollToSection = async () => {
 
 
 
-      <div id='meat' className='bigger-container'>
+      <div id='meat' ref={meat} className='bigger-container'>
          <img src={bgr} alt=""/>
          <div className='leftbigcontainer'>
           <div className='item11'>
@@ -279,7 +279,7 @@ const scrollToSection = async () => {
 
 
 
-      <div  className='bigger-container'>
+      <div id='fv' ref={fv} className='bigger-container'>
          <img id='fi' src={bgr} alt=""/>
          <div id='jo' className='leftbigcontainer'>
           <div className='item11'>
@@ -494,7 +494,7 @@ const scrollToSection = async () => {
         <img src={Lastbg} alt=""/>
         <h1>Need Fresh Meat or Fruits? <br/>Shop Now for Guaranteed Quality.</h1>
         <div className='lastbtn' onClick={() => setMenu("Products")}><Link to="/products" className="nav-link">
-          <button onClick={scrollUp}>SHOP NOW</button></Link>
+          <button onClick={scrollToTop}>SHOP NOW</button></Link>
         </div>
       </div>
     </div>

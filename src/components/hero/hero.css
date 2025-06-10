@@ -12,9 +12,13 @@
     font-size: 50px;
     margin-bottom: -39px;
 }
+
 .BUY button {
   margin-top: -50px;
   height: 60px;
+  box-shadow:
+    rgba(45, 35, 66, 0.2) 0 2px 4px,
+    rgba(45, 35, 66, 0.15) 0 7px 13px -3px;
   width: 200px;
   padding-left: 10px;
   background-color: red;
@@ -25,18 +29,20 @@
   border-radius: 12px;
   position: relative;
   font-size: 25px;
+  z-index: 1;
   font-weight: 600;
   color: white;
   display: flex;
   font-family: "Montserrat", sans-serif;
-  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   cursor: pointer;
   z-index: 1; 
 }
+
 .BUY button img{
     color: white;
     height: 20px;
+    z-index: 2;
     width: 20px;
     margin-left: 20px;
 }
@@ -54,12 +60,15 @@
   transition: all 0.4s ease-in-out;
   right: 0;
   top: 0;
-  z-index: 1; 
+  z-index: 2; 
 }
 
 .BUY button:hover::after {
   left: 0;
   right: auto;
+  box-shadow:
+    rgba(45, 35, 66, 0.2) 0 2px 4px,
+    rgba(45, 35, 66, 0.15) 0 7px 13px -3px;
   width: 100%;
 }
 
@@ -350,34 +359,23 @@ align-items: center;
   margin-top: -5px;
    text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
 }
-.p1 button{
+.more-info-button button{
   background-color: transparent;
   border: 2px solid red;
   border-radius: 12px;
   margin-left: 40px;
   height: 50px;
   margin-top: -20px;
+  font-size: 20px;
+  font-weight: 600;
+   transition: all  1s ease;
   width: 200px;
-  transition: all  .2s ease;
   color: red;
 }
-.p1 button:hover{
+.more-info-button button:hover{
    background-color: red;
    color: white;
    border: 2px solid white;
-}
-.p1 button h6{
-  font-size: 20px;
-  font-weight: 600;
-   transition: all  .2s ease;
-color: red;
-margin-top: 10px;
-}
-.p1 button h6:hover{
-  color: white;
-}
-.p2 button{
-margin-top: -20px;
 }
 .p2 h3{
   margin-top: 30px;
