@@ -3,7 +3,7 @@ import bg5 from '../../components/assets/bg4.jpg';
 import './abouts.css';
 import itema from '../../components/assets/item1.png';
 import itemb from '../../components/assets/item2.png';
-import itemc from '../../components/assets/item3.png';
+import itemc from '../../components/assets/car2.png';
 
 const Abouts = () => {
   const [isVisible, setIsVisible] = useState(false);
