@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const productRoutes = require('./routes/products');
 const app = express();
 
-app.use(express.json()); // To parse JSON
+app.use(express.json()); 
 app.use('/api/products', productRoutes);
 
 mongoose.connect('mongodb://localhost:27017/ecommerce', {
