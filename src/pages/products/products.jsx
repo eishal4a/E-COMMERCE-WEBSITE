@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef , useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import bgr from '../../components/assets/bg4.jpg';
 import './products.css';
@@ -8,8 +8,21 @@ import mt from'../../components/assets/12.png';
 import star from'../../components/assets/star.png';
 import Lastbg from '../../components/assets/last.png';
 
+
+
 const Products = () => {
    const[menu,setMenu]=useState("shop");
+const [products, setProducts] = useState([]);
+ useEffect(() => {
+    fetch('http://localhost:5000/api/products') 
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);        
+        setProducts(data);        
+      })
+      .catch(error => console.error('Error fetching products:', error));
+  }, []); 
+
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const meat = useRef(null);
