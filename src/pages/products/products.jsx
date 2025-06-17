@@ -7,7 +7,7 @@ import itemaa from '../../components/assets/item1.png';
 import mt from'../../components/assets/12.png';
 import star from'../../components/assets/star.png';
 import Lastbg from '../../components/assets/last.png';
-
+import axios from "axios";
 
 
 const Products = () => {
