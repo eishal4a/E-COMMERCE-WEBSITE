@@ -388,8 +388,14 @@
     margin: 20px auto;
     height: 550px;
   }
+  .all{
+    height:1400px ;
+  }
+  .bgroud img{
+    height: 1300px;
+  }
 .leftcart{
-  margin-top: -550px;
+  margin-top: -1250px;
 }
   .leftcart h1,
   .rightcart h1 {
@@ -397,7 +403,8 @@
     padding-top: 20px;
   }
 .rightcart{
-  margin-top: 100px;
+  margin-top: 50px;
+  height: 500px;
   margin-bottom: 100px;
 }
   .data-product button {
@@ -438,7 +445,25 @@
     font-size: 20px;
     width: 90%;
   }
-
+.inner{
+  margin-left: -17px;
+}
+.rightcart p{
+  margin-top: 20px;
+}
+.inner h5{
+  padding-left: 10px;
+}
+#chceckout-btn{
+  margin-left: 20px;
+}
+.tbtn h5{
+  margin-top: 10px;
+}
+.money-type{
+  margin-left: -120px;
+  margin-top: 50px;
+}
   .card,
   .popup-card {
     width: 90%;
@@ -452,6 +477,15 @@
   .message {
     font-size: 0.85rem;
   }
+  @keyframes animate {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.09);
+  }
+}
 }
 body, html, .cart-wrapper {
   height: auto;
