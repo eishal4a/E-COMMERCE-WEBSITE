@@ -26,10 +26,17 @@ const handleCheckoutClick = () => {
   const dismissSavePopup = () => {
     setShowSavePopup(false);
   };
+
+
+
   return (
-    <div>
-      <div className={`bgroud ${showCheckoutPopup || showSavePopup ? 'blurred' : ''}`}>
-        <img src={bgrr} alt=""/>
+    <div >
+<div className='all'>
+<div className={`bgroud ${showCheckoutPopup || showSavePopup ? 'blurred' : ''}`}>
+      <img src={bgrr} alt="bgrr-mobile" />
+   </div>
+
+
         <div className='leftcart'>
         <h1>MY CART</h1>
         <p>Review your selected items below before proceeding to checkout.</p>
