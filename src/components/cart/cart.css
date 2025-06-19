@@ -99,6 +99,7 @@
 }
 #savee{
   font-size: 15px;
+  cursor: pointer;
 }
 #save{
   height: 25px;
@@ -167,6 +168,13 @@
     border: 2px solid red;
     cursor: pointer;
     font-size: 30px;
+}
+.tbtn h5{
+  margin-top: 80px;
+}
+
+#chceckout-btn{
+  margin-top: 0px;
 }
 #chceckout-btn:hover{
      background-color: #c94747;
@@ -333,9 +341,14 @@
     margin-top: 50px;
     height: auto;
   }
-
+.rightcart
+{
+  height: 450px;
+  margin-bottom: 100px;
+}
   .leftcart {
-    margin-top: 80px;
+    margin-top: -1050px;
+    height: 450px;
   }
 
   .product {
@@ -345,32 +358,67 @@
   }
 
   .data-product {
-    margin: 20px 0 0 0;
-    text-align: center;
+    margin-left: 350px;
   }
-
+  .all{
+    height: 1200px;
+  }
+  .bgroud img{
+    height: 1100px;
+  }
+  .money-type{
+    padding-top: 50px;
+    margin-left: -100px;
+  }
+  .rightcart p{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+.tbtn  h5{
+  margin-left: 10px;
+  margin-top: 30px;
+}
   .data-product h5 {
     margin: 10px 0;
+    margin-top: 50px;
+    color:#ee0d0d;
   }
-
+.popup-card{
+  margin-top: -950px;
+  margin-left: 150px;
+}
   .product img {
-    margin-left: 0;
+    margin-left: -300px;
   }
-
+.card{
+  margin-right: 20px;
+}
   .rightcart {
     margin-top: 50px;
+    width: 400px;
+    margin-left: 40px;
   }
-
+.header{
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
   .rightcart button {
     width: 90%;
     margin: 30px auto 0;
     font-size: 24px;
     position: relative;
   }
-
+.inner h5{
+  margin-left: 10px;
+}
+#chceckout-btn{
+  width: 300px;
+  margin-left: 50px;
+}
   .money-type {
     margin-top: 20px;
-    margin-left: 0;
+    margin-left: -100px;
     text-align: center;
     position: relative;
   }
@@ -397,6 +445,9 @@
 .leftcart{
   margin-top: -1250px;
 }
+.leftcart img{
+  padding-left: 300px;
+}
   .leftcart h1,
   .rightcart h1 {
     font-size: 1.5rem;
@@ -413,7 +464,8 @@
     
   }
 .data-product{
-  margin-left: -10px;
+  text-align: left;
+  margin-left: 10px;
 }
   .product img {
     width: 150px;
@@ -422,7 +474,7 @@
 
   .data-product h2 {
     font-size: 1.2rem;
-    margin-left: -50px;
+    margin-top: 170px;
   }
 
   .data-product p,
@@ -431,7 +483,7 @@
   }
 
   .data-product h6{
-    margin-left: -90px;
+    margin-left: 0px;
     margin-top: 5px;
   }
   #savep{
@@ -439,7 +491,10 @@
   }
   #savee{
     width: 200px;
-    margin-left: 40px;
+    margin-left: 0px;
+  }
+  #save{
+    padding-left: 0px;
   }
   .rightcart button {
     font-size: 20px;
@@ -464,12 +519,44 @@
   margin-left: -120px;
   margin-top: 50px;
 }
-  .card,
-  .popup-card {
-    width: 90%;
-    margin: 30px auto;
-  }
 
+  .card{
+    margin-top: -600px;
+    z-index: 999;
+    margin-left: 30px;
+    width: 350px;
+    margin-right: 50px;
+  }
+.popup-card{
+  margin-top: -1200px;
+  z-index: 999;
+  margin-left: 30px;
+  width: 85%;
+  justify-content: center;
+  margin-right: 40px;
+  
+}
+.header{
+  padding-right: 0px;
+  width: 100%;
+}
+.image{
+  margin-left: 160px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.div_image_v{
+  margin-bottom: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 400px
+}
+.content{
+  width: 300px;
+  margin-left: 20px;
+}
   .title {
     font-size: 1rem;
   }
@@ -477,15 +564,6 @@
   .message {
     font-size: 0.85rem;
   }
-  @keyframes animate {
-  from {
-    transform: scale(1);
-  }
-
-  to {
-    transform: scale(1.09);
-  }
-}
 }
 body, html, .cart-wrapper {
   height: auto;
