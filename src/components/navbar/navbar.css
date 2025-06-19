@@ -264,16 +264,33 @@ width: 1480px;
   .navbar {
     flex-wrap: wrap;
     justify-content: space-between;
-    height: auto;
+    height: 50px;
     padding: 10px 20px;
     width: 90%;
     margin: 0;
+    margin-top: 5px;
     margin-left: 15px;
   }
-
+.cart{
+  margin-top: 3px;
+  margin-right: 30px;
+}
+.cart img{
+  margin-top: -20px;
+}
+.search img{
+  padding:0px 0px 0px 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.search{
+  margin-top: -15px;
+  margin-left: 370px;
+}
   .nav-logo {
-    margin: 0;
+    margin-left: -20px;
     width: auto;
+    margin-top: -20px;
   }
 
   .nav-menu {
@@ -301,8 +318,7 @@ width: 1480px;
   }
 
   .shop-button {
-    margin-top: 10px;
-    order: 1;
+    display: none;
   }
 
   .search, .cart {
@@ -334,23 +350,25 @@ width: 1480px;
 .nav-logo{
   height: 70px;
   width: 100px;
-  margin-top: -20px;
+  margin-top: -10px;
   margin-left: -21px;
 }
 .cart {
  padding-right: 20px;
  margin-left: 0px;
+ margin-top: -42px;
 }
 .cart img{
   padding-left: 0px;
   padding-right: 0px;
-  margin-left: 0px;
+  margin-left: 270px;
   margin-right: 0px;
 }
 .search img{
   padding-left: 0px;
   padding-right: 0px;
-  margin-left: 0px;
+  margin-left: -80px;
+  margin-top: 13px;
 }
 .search{
   margin-left: 150px;
@@ -361,6 +379,7 @@ width: 1480px;
   }
 .navbar{
   width: 85%;
+  margin-top: 5px;
   height: 50px;
   margin-left: 10px;
 }
